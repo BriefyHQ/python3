@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libpq5 \
          libpq-dev \
          libssl1.0.0 \
+         openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 # gpg: key F73C700D: public key "Larry Hastings <larry@hastings.org>" imported
