@@ -7,6 +7,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
          ca-certificates \
+         git \
          libsqlite3-0 \
          libpq5 \
          libpq-dev \
