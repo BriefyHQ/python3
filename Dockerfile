@@ -77,7 +77,7 @@ RUN cd /usr/local/bin \
     && ln -s python3-config python-config
 
 # Install base requirements
-ADD ./requirements.txt
-RUN pip3 install --no-cache-dir --upgrade -r requirements.txt && rm requirements.txt
+ADD ./requirements.txt /requirements.txt
+RUN pip3 install --no-cache-dir --upgrade -r /requirements.txt && rm /requirements.txt
 
 CMD ["python3"]
