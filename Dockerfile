@@ -59,7 +59,7 @@ RUN set -ex \
     && make install \
     && ldconfig \
     && pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-    && pip3 install --no-cache-dir --upgrade psycopg2 \
+    && pip3 install --no-cache-dir --upgrade psycopg2 pycrypto \
     && [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] \
     && find /usr/local -depth \
         \( \
