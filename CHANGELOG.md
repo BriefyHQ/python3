@@ -1,3 +1,7 @@
+### 1.1.0
+
+- Add S3 configuration to use s3v4 signature. (ericof)
+
 ### 1.0.0
 
 - BODY-28: Add pyCrypto. (ericof)

@@ -5,6 +5,11 @@ MAINTAINER Briefy <developers@briefy.co>
 # > At the moment, setting "LANG=C" on a Linux system *fundamentally breaks Python 3*, and that's not OK.
 ENV LANG C.UTF-8
 
+RUN mkdir /root/.aws/
+
+# Add aws configuration
+ADD ./aws_config /root/.aws/config
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
          ca-certificates \
          git \
