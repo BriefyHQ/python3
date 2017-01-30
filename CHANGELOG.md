@@ -1,3 +1,7 @@
+### 1.2.0
+
+- Upgrade packages. (ericof)
+
 ### 1.1.0
 
 - Add S3 configuration to use s3v4 signature. (ericof)
