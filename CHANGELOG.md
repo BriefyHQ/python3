@@ -1,3 +1,7 @@
+### 1.3.1
+
+- Symbolic link from pip3 to pip (ericof)
+
 ### 1.3.0
 
 - Upgrade to Python 3.6.1. (ericof)
