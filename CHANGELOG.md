@@ -1,3 +1,8 @@
+### 1.3.0
+
+- Upgrade to Python 3.6.1. (ericof)
+- Upgrade packages. (ericof)
+
 ### 1.2.0
 
 - Upgrade packages. (ericof)

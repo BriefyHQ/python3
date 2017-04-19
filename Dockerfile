@@ -20,10 +20,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
-# gpg: key F73C700D: public key "Larry Hastings <larry@hastings.org>" imported
-ENV GPG_KEY 97FC712E4C024BBEA48A61ED3A5CA953F73C700D
+ENV GPG_KEY 0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
 
-ENV PYTHON_VERSION 3.5.2
+ENV PYTHON_VERSION 3.6.1
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 9.0.1
@@ -65,7 +64,6 @@ RUN set -ex \
     && ldconfig \
     && pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
     && pip3 install --no-cache-dir --upgrade psycopg2 pycrypto \
-    && [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] \
     && find /usr/local -depth \
         \( \
             \( -type d -a -name test -o -name tests \) \
