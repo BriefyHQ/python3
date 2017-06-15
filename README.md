@@ -1,6 +1,6 @@
-# Briefy Python 3.5
+# Briefy Python 3.6
 
-Fork of Python 3.5 Slim that ships with the following packages by default:
+Fork of Python 3.6 Slim that ships with the following packages by default:
 
 - psycopg2
 - alembic
