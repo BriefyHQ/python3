@@ -1,3 +1,19 @@
+### 1.4.0
+
+- Upgrade to Python 3.6.2. (ericof)
+- Upgrade packages:
+
+	- alembic (0.9.1 -> 0.9.3)
+	- botocore (1.5.40 -> 1.5.84)
+	- colander (1.3.2 -> 1.3.3)
+	- Mako (1.06 -> 1.0.7)
+	- newrelic (2.82.1.63 -> 2.88.1.73)
+	- python-dateutil (2.6.0 -> 2.6.1)
+	- requests (2.13.0 -> 2.18.1)
+	- SQLAlchemy (1.1.9 -> 1.1.11)
+	- transaction (2.1.2 -> 2.0.3)
+	- zope.interface (4.3.3 -> 4.4.2)
+
 ### 1.3.1
 
 - Symbolic link from pip3 to pip (ericof)
