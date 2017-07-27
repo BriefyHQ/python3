@@ -34,7 +34,8 @@ RUN set -ex \
         libbz2-dev \
         libc6-dev \
         liblzma-dev \
-	libmemcached-dev \
+        libmemcached11 \
+        libmemcached-dev \
         libncurses-dev \
         libreadline-dev \
         libsqlite3-dev \
@@ -64,7 +65,8 @@ RUN set -ex \
     && make install \
     && ldconfig \
     && pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
-    && pip3 install --no-cache-dir --upgrade psycopg2 pycrypto pylibmc \
+    && pip3 install --no-cache-dir --upgrade psycopg2 pycrypto \
+    && pip3 install --no-cache-dir --upgrade pylibmc --install-option="--with-libmemcached=/usr" \
     && find /usr/local -depth \
         \( \
             \( -type d -a -name test -o -name tests \) \
