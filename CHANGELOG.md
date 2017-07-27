@@ -1,3 +1,9 @@
+### 1.4.1
+
+- Include libmemcached-dev as dependency (rudaporto)
+- Install pylibmc latest stable (rudaporto)
+
+
 ### 1.4.0
 
 - Upgrade to Python 3.6.2. (ericof)
