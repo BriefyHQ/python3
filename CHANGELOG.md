@@ -1,3 +1,18 @@
+### 1.4.3
+
+- Bump sqlalchemy version to 1.2.0b2 (rudaporto)
+- Added SQLAlchemy-Continuum version 1.3.1 (rudaporto
+- Upgrade packages:
+
+	- alembic (0.9.3 -> 0.9.4)
+	- newrelic (2.88.1.73 -> 2.90.0.75)
+	
+
+### 1.4.2
+
+- Added also libmemcached11 as dependency (rudaporto)
+
+
 ### 1.4.1
 
 - Include libmemcached-dev as dependency (rudaporto)
