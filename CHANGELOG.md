@@ -1,7 +1,12 @@
+### 1.4.4
+
+- Upgrade to Python 3.6.3 and fix easy\_install link (rudaporto)
+
+
 ### 1.4.3
 
 - Bump sqlalchemy version to 1.2.0b2 (rudaporto)
-- Added SQLAlchemy-Continuum version 1.3.1 (rudaporto
+- Added SQLAlchemy-Continuum version 1.3.1 (rudaporto)
 - Upgrade packages:
 
 	- alembic (0.9.3 -> 0.9.4)
