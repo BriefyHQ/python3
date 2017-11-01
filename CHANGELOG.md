@@ -1,3 +1,21 @@
+### 1.4.5
+
+- Upgrade packages: (rudaporto)
+
+	- SQLAlchemy == 1.2.0b3
+	- alembic == 0.9.6
+	- boto3 == 1.4.7
+	- botocore == 1.7.36
+	- newrelic == 2.96.0.80
+	- pytz == 2017.3
+	- requests == 2.18.4
+	- s3transfer == 0.1.11
+	- six == 1.11.0
+	- SQLAlchemy-Continuum == 1.3.2
+	- SQLAlchemy-Utils == 0.32.19
+	- zope.interface==4.4.3
+
+
 ### 1.4.4
 
 - Upgrade to Python 3.6.3 and fix easy\_install link (rudaporto)
